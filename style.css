@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+header{
+    /* position: fixed; */
+    top: 5%;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.main{
+    background-image: url(./bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    width: 100%;
+    height: auto;
+}
+header h1{
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+.form{
+    width:55%;
+	margin: 0 auto;
+    
+}
+.border{
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 3em;
+    justify-content: center;
+    background: rgba(171, 171, 171, 0.34);
+    margin-top: 7vh;
+    /* position: absolute; */
+}
+label{
+    display: block;
+    color: #ffffff;
+    font-size: 17px;
+    margin: 2px;
+    padding: 2px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px;
+}
+.bp{
+    display: flex   ;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+.phone{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 50;
+    
+}
+.birth{
+    flex-grow: 1;
+    flex-shrink: 1; 
+    /* width: 50%; */
+
+    
+}
+.birth input[date]{
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* font-size: 12px; */
+}
+.btn{
+    /* display: flex;
+    height: 90vh; */
+}
+/* Default styles for the button */
+.btn input[type="submit"] {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    background: rgba(199, 65, 132, 0);
+}
+.btn input[type="submit"]:hover{
+    background-color: #005ba4;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* Media query for smaller screens (adjust as needed) */
+@media screen and (max-width: 768px) {
+    .btn input[type="submit"] {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        width: 70%; /* Adjust button width for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens (adjust as needed) */
+@media screen and (max-width: 480px) {
+    .btn input[type="submit"] {
+        font-size: 12px; /* Adjust font size for even smaller screens */
+        width: 90%; /* Adjust button width for even smaller screens */
+    }
+}
+@media screen and (max-width: 320px) {
+    .btn input[type="submit"] {
+        font-size: 7px; /* Adjust font size for smaller screens */
+        width: 90%; /* Adjust button width for smaller screens */
+    }
+}
+
+
+
